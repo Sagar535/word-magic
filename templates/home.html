@@ -1,0 +1,9 @@
+<h1>Word count</h1>
+<h4>The number of word counted is: {{ count }}</h4>
+<p>The char compose is: {{ word_dict }}</p>
+
+<form action="{% url 'count' %}" method="GET">
+	<textarea cols="40" rows="5" name="full_text">{{ words }}</textarea>
+	<br>
+	<input type="Submit" value="Count"></input>
+</form>
