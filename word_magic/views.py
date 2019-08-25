@@ -2,6 +2,13 @@ from django.http import HttpResponse
 from django.shortcuts import render
 import re
 
+import random
+import datetime
+
+from matplotlib.backends.backend_agg import FigureCanvasAgg as FigureCanvas
+from matplotlib.figure import Figure
+from matplotlib.dates import DateFormatter
+
 def index(request):
 	return render(request, 'home.html', {'count': 0, 'word_dict': {}})
 
@@ -27,14 +34,6 @@ def clean_words(word_to_be_cleaned):
 	return ws_removed.lower()
 
 def simple(request):
-    import random
-    import django
-    import datetime
-
-    from matplotlib.backends.backend_agg import FigureCanvasAgg as FigureCanvas
-    from matplotlib.figure import Figure
-    from matplotlib.dates import DateFormatter
-
     fig=Figure()
     ax=fig.add_subplot(111)
     x=[]
