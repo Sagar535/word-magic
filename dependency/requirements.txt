@@ -1,6 +1,6 @@
 Babel==2.6.0
 CoffeeScript==2.0.3
-Django==2.1.11
+Django==2.2.24
 docutils==0.14
 Mako==1.0.9
 markdown2==2.3.7
