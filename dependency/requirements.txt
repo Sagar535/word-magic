@@ -2,7 +2,7 @@ Babel==2.6.0
 CoffeeScript==2.0.3
 Django==2.1.11
 docutils==0.14
-Mako==1.0.9
+Mako==1.2.2
 markdown2==2.3.7
 MarkupSafe==1.1.1
 Plim==0.9.12
